@@ -17,6 +17,16 @@ arbre['fin'] = {}
 
 INFINI = float('inf')
 
+couts = {}
+couts = arbre['debut']
+couts['fin'] = INFINI
+
+parents = {}
+parents['a'] = 'debut'
+parents['b'] = 'debut'
+parents['fin'] = None
+
+
 def trouver_noeud_ayant_meilleur_cout(couts, visite):
     meilleur_cout = INFINI
     noeud_au_meilleur_cout = None
@@ -43,10 +53,8 @@ def dijkstra(couts, parents):
     return couts
 
 def main():
-    couts = {'a': 6, 'b': 2, 'fin': INFINI}
-    parents = {'a': 'debut', 'b': 'debut', 'fin': None}
-    couts = dijkstra(couts, parents)
-    print(couts['fin']) 
+    distance = dijkstra(couts, parents)
+    print(distance['fin']) 
 
 if __name__== "__main__":
     main()
