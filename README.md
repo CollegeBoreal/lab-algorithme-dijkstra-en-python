@@ -19,6 +19,7 @@ INFINI = float('INF')
 
 couts = {'a': 6, 'b': 2, 'fin': INFINI}
 parents = {'a': 'debut', 'b': 'debut', 'fin': None}
+visite = []
 
 def trouver_noeud_au_meilleur_cout(couts):
     meilleur_cout = INFINI
@@ -30,18 +31,20 @@ def trouver_noeud_au_meilleur_cout(couts):
             noeud_au_meilleur_cout = noeud
     return noeud_au_meilleur_cout
 
-visite = []
-noeud = trouver_noeud_au_meilleur_cout(couts)
-while noeud is not None:
-    cout = couts[noeud]
-    voisins = graphe[noeud]
-    for voisin in voisins.keys():
-        nouveau_cout = cout + voisins[voisin]
-        if couts[voisin] > nouveau_cout:
-            couts[voisin] = nouveau_cout
-            parents[voisin] = noeud
-    visite.append(noeud)
+def main():
     noeud = trouver_noeud_au_meilleur_cout(couts)
+    while noeud is not None:
+        cout = couts[noeud]
+        voisins = graphe[noeud]
+        for voisin in voisins.keys():
+            nouveau_cout = cout + voisins[voisin]
+            if couts[voisin] > nouveau_cout:
+                couts[voisin] = nouveau_cout
+                parents[voisin] = noeud
+        visite.append(noeud)
+        noeud = trouver_noeud_au_meilleur_cout(couts)
 
-print(couts['fin']) 
+if __name__== "__main__":
+  main()
+  print(couts['fin']) 
 ```
