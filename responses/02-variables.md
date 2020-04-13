@@ -8,7 +8,7 @@ Le but étant de traverser l'arbre du début jusqu'à la fin en prenant le chemi
 
 Pour rappel, le graphe ne peux former de boucle afin de respecter la description d'un arbre [voir DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
-<img src="https://user-images.githubusercontent.com/62551735/79169427-70518080-7dba-11ea-81af-f3f005aad02e.png" width="384" height="512"></img>
+<img src="https://user-images.githubusercontent.com/62551735/79170355-2027ed80-7dbd-11ea-8a80-3871a0d40ab0.png" width="384" height="512"></img>
 
 - [ ] Ajoute l'arbre suivant au programme Python, juste aprés le block de commentaires ou tu as mis ton nom.
 
