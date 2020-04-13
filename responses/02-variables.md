@@ -8,6 +8,8 @@ La(e) premièr.e étudiant(e) assit au bout d'une table forme le groupe de l'ét
 
 La relation de proximité ne peux former de boucle afin de respecter la description d'un arbre [voir DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
+![image](https://user-images.githubusercontent.com/62551735/79169427-70518080-7dba-11ea-81af-f3f005aad02e.png)
+
 - [ ] Ajoute l'arbre suivant au programme Python, juste aprés le block de commentaires ou tu as mis ton nom.
 
 ```python
