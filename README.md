@@ -5,15 +5,15 @@ Salut,
 Dans ce tutoriel, tu vas créer une recherche arborescente en utilisant l'algorithme de recherche se reposant sur [Dijkstra](https://fr.wikipedia.org/wiki/Algorithme_de_Dijkstra)
 
 ```
-graphe = {'debut': {}}
-graphe['debut']['a'] = 6
-graphe['debut']['b'] = 2
-graphe['a'] = {}
-graphe['a']['fin'] = 1
-graphe['b'] = {}
-graphe['b']['a'] = 3
-graphe['b']['fin'] = 5
-graphe['fin'] = {}
+arbre = {'debut': {}}
+arbre['debut']['a'] = 6
+arbre['debut']['b'] = 2
+arbre['a'] = {}
+arbre['a']['fin'] = 1
+arbre['b'] = {}
+arbre['b']['a'] = 3
+arbre['b']['fin'] = 5
+arbre['fin'] = {}
 
 INFINI = float('inf')
 
@@ -32,7 +32,7 @@ def dijkstra(couts, parents):
     noeud = trouver_noeud_ayant_meilleur_cout(couts,visite)
     while noeud is not None:
         cout = couts[noeud]
-        voisins = graphe[noeud]
+        voisins = arbre[noeud]
         for voisin in voisins.keys():
             nouveau_cout = cout + voisins[voisin]
             if couts[voisin] > nouveau_cout:
