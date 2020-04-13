@@ -5,7 +5,8 @@ Salut,
 Dans ce tutoriel, tu vas créer une recherche arborescente en utilisant l'algorithme de recherche se reposant sur [Dijkstra](https://fr.wikipedia.org/wiki/Algorithme_de_Dijkstra)
 
 ```
-arbre = {'debut': {}}
+arbre = {}
+arbre['debut'] = {}
 arbre['debut']['a'] = 6
 arbre['debut']['b'] = 2
 arbre['a'] = {}
