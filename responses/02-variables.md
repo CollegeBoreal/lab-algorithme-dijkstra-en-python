@@ -2,7 +2,7 @@
 
 Pour faire une recherche arborescente, il nous faut un arbre qui constituera notre variable.
 
-Dans cet exemple, on va créer un arbre que l'on appellera `élèves` qui nous permettra de naviguer à travers une classe d'étudiants. Ces étudiants ont comme relation, une relation de proximité.
+Dans cet exemple, on va créer un arbre que l'on appellera `arbre` qui nous permettra de naviguer à travers des noeuds ayant un poids à chaque arc (les flèches). Ces étudiants ont comme relation, une relation de proximité.
 
 La(e) premièr.e étudiant(e) assit au bout d'une table forme le groupe de l'étudiant(e) de cette table. L'étudiant(e) assis(e) à l'autre bout de table est forcément à proximité d'un(e) étudiant(e) d'une autre table.
 
