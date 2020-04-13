@@ -13,21 +13,15 @@ La relation de proximité ne peux former de boucle afin de respecter la descript
 - [ ] Ajoute l'arbre suivant au programme Python, juste aprés le block de commentaires ou tu as mis ton nom.
 
 ```python
-eleves = {}
-eleves["Boris"]=["Amir","Franck","Nathalie","Bertrand"]
-eleves["Amir"]=[]
-eleves["Franck"]=[]
-eleves["Nathalie"]=[]
-eleves["Bertrand"]=["Erna","Hassana","Abdelkrim"]
-eleves["Erna"]=[]
-eleves["Hassana"]=[]
-eleves["Zoureni"]=["Sekou","Auriane","Corlings"]
-eleves["Sekou"]=[]
-eleves["Auriane"]=[]
-eleves["Corlings"]=[]
-eleves["Abdelkrim"]=["Souleyman","Zack","Zoureni"]
-eleves["Souleyman"]=[]
-eleves["Zack"]=[]
+arbre = {'debut': {}}
+arbre['debut']['a'] = 6
+arbre['debut']['b'] = 2
+arbre['a'] = {}
+arbre['a']['fin'] = 1
+arbre['b'] = {}
+arbre['b']['a'] = 3
+arbre['b']['fin'] = 5
+arbre['fin'] = {}
 ```
 
 - [ ] Notre programme étant une recherche, on va remplacer la fonction `main` par `search` en lui donnant un paramètre en entrée `name`. Afin de lui donner le premier nom dans l'arbre, dans le block `if __name__ == "__main__"` on écrira la nouvelle fonction et son paramètre d'entrée: `search("Boris")`. Le code se présentera comme ceci.
