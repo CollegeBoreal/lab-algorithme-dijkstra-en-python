@@ -2,11 +2,11 @@
 
 Pour faire une recherche arborescente, il nous faut un arbre qui constituera notre variable.
 
-Dans cet exemple, on va créer un arbre que l'on appellera `arbre` qui nous permettra de naviguer à travers des noeuds ayant un poids à chaque arc (les flèches). Ces étudiants ont comme relation, une relation de proximité.
+Dans cet exemple, on va créer un arbre que l'on appellera `arbre` qui nous permettra de naviguer à travers des noeuds ayant un poids à chaque arc (symbolisé par un flèche). 
 
-La(e) premièr.e étudiant(e) assit au bout d'une table forme le groupe de l'étudiant(e) de cette table. L'étudiant(e) assis(e) à l'autre bout de table est forcément à proximité d'un(e) étudiant(e) d'une autre table.
+Le but étant de traverser l'arbre du début jusqu'à la fin en prenant le chemin le moins couteux. Cela peut être des kilomètres, des vitesses de débit Internet. Dans notre cas, nous allons choisir des kilomètres.
 
-La relation de proximité ne peux former de boucle afin de respecter la description d'un arbre [voir DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
+Pour rappel, le graphe ne peux former de boucle afin de respecter la description d'un arbre [voir DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
 <img src="https://user-images.githubusercontent.com/62551735/79169427-70518080-7dba-11ea-81af-f3f005aad02e.png" width="384" height="512"></img>
 
