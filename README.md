@@ -15,13 +15,9 @@ graphe['b']['a'] = 3
 graphe['b']['fin'] = 5
 graphe['fin'] = {}
 
-INFINI = float('INF')
+INFINI = float('inf')
 
-couts = {'a': 6, 'b': 2, 'fin': INFINI}
-parents = {'a': 'debut', 'b': 'debut', 'fin': None}
-visite = []
-
-def trouver_noeud_au_meilleur_cout(couts):
+def trouver_noeud_ayant_meilleur_cout(couts, visite):
     meilleur_cout = INFINI
     noeud_au_meilleur_cout = None
     for noeud in couts:
@@ -31,8 +27,9 @@ def trouver_noeud_au_meilleur_cout(couts):
             noeud_au_meilleur_cout = noeud
     return noeud_au_meilleur_cout
 
-def main():
-    noeud = trouver_noeud_au_meilleur_cout(couts)
+def dijkstra(couts, parents):
+    visite = []
+    noeud = trouver_noeud_ayant_meilleur_cout(couts,visite)
     while noeud is not None:
         cout = couts[noeud]
         voisins = graphe[noeud]
@@ -42,9 +39,15 @@ def main():
                 couts[voisin] = nouveau_cout
                 parents[voisin] = noeud
         visite.append(noeud)
-        noeud = trouver_noeud_au_meilleur_cout(couts)
+        noeud = trouver_noeud_ayant_meilleur_cout(couts,visite)
+    return couts
+
+def main():
+    couts = {'a': 6, 'b': 2, 'fin': INFINI}
+    parents = {'a': 'debut', 'b': 'debut', 'fin': None}
+    couts = dijkstra(couts, parents)
+    print(couts['fin']) 
 
 if __name__== "__main__":
-  main()
-  print(couts['fin']) 
+    main()
 ```
