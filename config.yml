@@ -1,12 +1,12 @@
-title: Lab Algorithme du BFS en Python
+title: Lab Algorithme Dijkstra en Python
 tagline: 'Random numbers, variables, and conditionals'
-description: Apprendre à écrire un algorithme de recherche arborescente en Python!
+description: Apprendre à écrire un algorithme de recherche Dijkstra en Python!
 tags:
   - Python
 template:
-  name: lab-algorithme-du-bfs-en-python
-  repo: lab-algorithme-du-bfs-en-python-course-template
-  description: Recherche BFS en Python
+  name: lab-algorithme-dijkstra-en-python
+  repo: lab-algorithme-dijkstra-en-python-gabarit
+  description: Algorithme de recherche utilisant Dijkstra en Python
 before:
   - type: createIssue
     title: Installer son projet
