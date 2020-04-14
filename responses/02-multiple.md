@@ -24,7 +24,7 @@ On `boucle` autour de notre dictionnaire de coûts en extirpant chaque `noeud` e
 
 Pour rappel, nous recherchons le coût le plus bas, ce qui signifie de comparer le coût du noeud courant au coût sauvegardé dans la variable `meilleur_cout`
 
-```
+```python
         cout = couts[noeud]
         if cout < meilleur_cout:
 ```
