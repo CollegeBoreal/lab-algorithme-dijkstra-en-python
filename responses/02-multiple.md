@@ -20,7 +20,7 @@ def trouver_noeud_ayant_meilleur_cout(couts):
     return noeud_au_meilleur_cout
 ```
 
-On `boucle` autour de notre dictionnaire de coûts en extirpant chaque `noeud` et en lisant son coût. Si le coût nous intéresse, on le garde dans deux variables `noeud_au_meilleur_cout` et `meilleur_cout` pour les utiliser ultérieurement.
+On `boucle` autour de notre dictionnaire de coûts en extirpant chaque `noeud` et en lisant son coût. Si le coût nous intéresse, on le garde dans deux variables `noeud_au_meilleur_cout` et `meilleur_cout`, dont on a pris le soin d'initialiser au préalable à `None` et à `INFINI` respectivement, pour les utiliser ultérieurement.
 
 Pour rappel, nous recherchons le coût le plus bas, ce qui signifie de comparer le coût du noeud courant au coût sauvegardé dans la variable `meilleur_cout`
 
