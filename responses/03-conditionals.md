@@ -1,10 +1,15 @@
 Continuons maintenant dans une recherche arborescente plus approfondie.
 
-Pour naviguer dans la queue, on va demander aux personnes de sortir par la gauche `(du bus)` et tant qu'il y a une personne dans la queue, on continue. Le mouvement s'arrete quand la queue est vide. Ceci est représenté par le code ci-dessous:
+Maintenant que l'on a trouvé le noeud le moins couteux entre les noeuds du début, on doit penser à faire la même comparaison pour les voisins du noeud qu'on a trouvé, 'b' en occurence.
 
 ```python
-   while search_queue:
-      personne = search_queue.popleft()
+def dijkstra(couts, parents):
+    noeud = trouver_noeud_ayant_meilleur_cout(couts)
+    voisins = arbre[noeud]
+    for voisin in voisins.keys():
+        couts[voisin] = voisins[voisin]
+        noeud = trouver_noeud_ayant_meilleur_cout(couts)
+    return couts
 ```
 
 Ce code ne fait que faire sortir les premières personnes entrées dans le bus. Il ne tient pas compte des `autres stations de bus`, dans notre cas le lien de proximité de nos étudiants.
