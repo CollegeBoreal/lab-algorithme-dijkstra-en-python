@@ -25,6 +25,16 @@ arbre['b']['fin'] = 5
 arbre['fin'] = {}
 ```
 
+- [ ] Ajoute ensuite, le dictionnaire `hastable` de coûts qui nous permettra de choisir le coût du chemin optimal. Tu remarqueras que l'on a initialisé une variable `INFINI` de type `float` qui nous servira de `bouche trou` le temps que l'on trouve la valeur recherchée. On assignera au coût final `couts['fin']` que nous recherchons à l'`INFINI`
+
+```
+INFINI = float('inf')
+
+couts = {}
+couts = arbre['debut']
+couts['fin'] = INFINI
+```
+
 - [ ] Notre programme étant une recherche, on va remplacer la fonction `main` par `search` en lui donnant un paramètre en entrée `name`. Afin de lui donner le premier nom dans l'arbre, dans le block `if __name__ == "__main__"` on écrira la nouvelle fonction et son paramètre d'entrée: `search("Boris")`. Le code se présentera comme ceci.
 
 ```python
