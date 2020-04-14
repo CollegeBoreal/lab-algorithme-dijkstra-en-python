@@ -35,7 +35,7 @@ couts = arbre['debut']
 couts['fin'] = INFINI
 ```
 
-- [ ] Enfin, afin de remonter dans l'arbre, ajoute le dictionnaire `parents` qui nous guidera vers le haut de la hiérarchie si besoin.
+- [ ] Enfin, afin de remonter dans l'arbre, ajoute le dictionnaire `parents` qui nous guidera vers le haut de la hiérarchie des `noeuds` si besoin. Naturellement, le parent du noeud `fin` n'est pas encore déterminé, nous lui assignerons la valeur `None` qui signifie `rien`. 
 
 ```
 parents = {}
