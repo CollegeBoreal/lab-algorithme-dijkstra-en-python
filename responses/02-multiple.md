@@ -22,6 +22,14 @@ def trouver_noeud_ayant_meilleur_cout(couts):
 
 On `boucle` autour de notre dictionnaire de coûts en extirpant chaque `noeud` et en lisant son coût. Si le coût nous intéresse, on le garde dans deux variables `noeud_au_meilleur_cout` et `meilleur_cout` pour les utiliser ultérieurement.
 
+Pour rappel, nous recherchons le coût le plus bas, ce qui signifie de comparer le coût du noeud courant au coût sauvegardé dans la variable `meilleur_cout`
+
+```
+        cout = couts[noeud]
+        if cout < meilleur_cout:
+```
+
+
 Maintenant que nous avons notre cas de base `base case`, penser à la récursion, on va utiliser une autre `structure de données` pour ordonner notre recherche.  
 
 - [ ] Soyons ordonné
