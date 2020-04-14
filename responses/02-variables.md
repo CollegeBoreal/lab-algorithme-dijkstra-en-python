@@ -25,7 +25,7 @@ arbre['b']['fin'] = 5
 arbre['fin'] = {}
 ```
 
-- [ ] Ajoute ensuite, le dictionnaire `hastable` de coûts qui nous permettra de définir le coût du chemin optimal. Tu remarqueras que l'on a initialisé une variable `INFINI` de type `float` qui nous servira de `bouche trou` le temps que l'on trouve la valeur recherchée. On assignera au coût final `couts['fin']` que nous recherchons à l'`INFINI`
+- [ ] Ajoute ensuite, le dictionnaire `hastable` de coûts qui nous permettra de définir le coût du chemin optimal. Tu remarqueras que l'on a initialisé une variable `INFINI` de type `float` qui nous servira de `bouche trou` le temps que l'on trouve la valeur recherchée. On assignera au coût de démarage les couts de `début` de l'ardre et au final `couts['fin']` qui est le coût que nous recherchons à l'`INFINI`.
 
 ```
 INFINI = float('inf')
