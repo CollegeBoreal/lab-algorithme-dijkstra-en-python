@@ -1,16 +1,23 @@
 Tu as entré {{ taille }} , j'ai trouvé :four: . Cela n'a pas trop d'importance pour l'instant, continuons!.
 
-- [ ] Déterminons la personne élue
+- [ ] Déterminons le meilleur coût
 
-Pour que notre algorithme fonctionne, nous allons assigner une personne qui nous permettra d'arrêter notre recherche.
+Pour que notre algorithme fonctionne, nous allons chercher le meilleur coût à travers une liste de couts.
 
-Notre recherche consiste à trouver la personne dans la classe qui possède un ordinateur Apple :apple:. Pour cela, on va poser la question à tous les étudiants, trouver la première personne qui correspond à notre critère d'élection et stopper notre recherche en retournant `vrai` sinon aller jusqu'au bout de l'arbre et ramener `faux`. Créons une fonction, à part, que l'on nommera `personne_elue` et posons la question si la personne courante `name` est bien l'élue.
+C'est très simple, on va créer une fonction `trouver_noeud_ayant_meilleur_cout` qui va recevoir une liste de noeux qu'on a assigné des coûts. 
 
 :bulb: On va écrire notre fonction juste après la déclaration de notre arbre `eleves`
 
 ```python
-def personne_elue(name):
-    return name == 'Zoureni'
+def trouver_noeud_ayant_meilleur_cout(couts):
+    meilleur_cout = INFINI
+    noeud_au_meilleur_cout = None
+    for noeud in couts:
+        cout = couts[noeud]
+        if cout < meilleur_cout:
+            meilleur_cout = cout
+            noeud_au_meilleur_cout = noeud
+    return noeud_au_meilleur_cout
 ```
 
 Maintenant que nous avons notre cas de base `base case`, penser à la récursion, on va utiliser une autre `structure de données` pour ordonner notre recherche.  
