@@ -5,11 +5,15 @@ Maintenant que l'on a trouvé le noeud le moins couteux entre les noeuds du déb
 ```python
 def dijkstra(couts, parents):
     noeud = trouver_noeud_ayant_meilleur_cout(couts)
+    print ("Le noeud '" + noeud + "' a comme cout " + str(couts[noeud]))
     voisins = arbre[noeud]
     for voisin in voisins.keys():
         couts[voisin] = voisins[voisin]
+        print ("Le noeud '" + noeud + "' a comme voisin " + voisin + " dont le cout est de " + str(couts[voisin]))
         noeud = trouver_noeud_ayant_meilleur_cout(couts)
+        print ("'" + noeud + "' a un meilleur cout de " + str(couts[noeud]))
     return couts
+
 ```
 
 Ce code ne fait que faire sortir les premières personnes entrées dans le bus. Il ne tient pas compte des `autres stations de bus`, dans notre cas le lien de proximité de nos étudiants.
