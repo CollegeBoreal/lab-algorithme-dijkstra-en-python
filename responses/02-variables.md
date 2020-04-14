@@ -13,7 +13,8 @@ Pour rappel, le graphe ne peux former de boucle afin de respecter la description
 - [ ] Ajoute l'arbre suivant au programme Python, juste aprés le block de commentaires ou tu as mis ton nom.
 
 ```python
-arbre = {'debut': {}}
+arbre = {}
+arbre['debut'] = {}
 arbre['debut']['a'] = 6
 arbre['debut']['b'] = 2
 arbre['a'] = {}
