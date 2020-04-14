@@ -44,12 +44,12 @@ def dijkstra(couts, parents):
 
 - [ ] Fais tourner ton programme dans ton terminal
 
-:warning: Mets le chiffre que le programme a imprimé dans le message de ta signature `commit` à la soumission de ton programme.
+:warning: Mets le noeud que le programme a imprimé dans le message de ta signature `commit` à la soumission de ton programme.
 
 
 **Soumets ton code** vers GitHub pour continuer:
 ```
 git add b000000000.py
-git commit --message "La taille de la queue est <mon chiffre ICI>"
+git commit --message "La meilleur cout est celui du noeud <mon noeud ICI>"
 git push
 ```
