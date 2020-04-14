@@ -54,7 +54,7 @@ if __name__== "__main__":
    dijkstra(couts, parents)
 ```
 
-- [ ] La fonction `dijkstra` a plutôt l'air d'avoir un effet secondaire `side effects` car toute définition de recherche devrait retourner une valeur et pourrait afficher autre chose que ce que l'on a actuellement. Pour y remédier, nous allons lui donner une valeur de retour par défaut, notre arbre `arbre`.
+- [ ] La fonction `dijkstra` a plutôt l'air d'avoir un effet secondaire `side effects` car toute définition de recherche devrait retourner une valeur et pourrait afficher autre chose que ce que l'on a actuellement. Pour y remédier, nous allons lui donner une valeur de retour par défaut, notre arbre `arbre` en affichant au passage la taille des ses valeurs.
 
 ```python
 def dijkstra(couts, parents):
