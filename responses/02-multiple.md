@@ -35,7 +35,7 @@ Maintenant que nous avons notre cas de élémentaire de recherche de coûts, on 
 
 Dans la fonction `dijkstra`, remplace `print( len(arbre.values()) )` par la recherche du noeud et son affichage. Réécrit la fonction `dijkstra` comme ceci:
 
-```
+```python
 def dijkstra(couts, parents):
     noeud = trouver_noeud_ayant_meilleur_cout(couts)
     print( noeud )
