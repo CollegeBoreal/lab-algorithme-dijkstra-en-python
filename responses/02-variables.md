@@ -44,22 +44,22 @@ parents['b'] = 'debut'
 parents['fin'] = None
 ```
 
-- [ ] Notre programme étant une recherche, on va remplacer la fonction `main` par `search` en lui donnant un paramètre en entrée `name`. Afin de lui donner le premier nom dans l'arbre, dans le block `if __name__ == "__main__"` on écrira la nouvelle fonction et son paramètre d'entrée: `search("Boris")`. Le code se présentera comme ceci.
+- [ ] Notre programme étant une recherche sur l'algorithme de l'informaticien hollandais [Dijkstra](https://fr.wikipedia.org/wiki/Edsger_Dijkstra), on va remplacer la fonction `main` par son nom `dijkstra` en lui donnant deux paramètres en entrée `couts` et `parents` qui évolueront au fil de la recherche. Dans le block `if __name__ == "__main__"` on écrira la nouvelle fonction et ses paramètres d'entrée: `dijkstra(couts, parents)`. Le code se présentera comme ceci.
 
 ```python
-def search(name):
+def dijkstra(couts, parents):
    print('Informatique: le rêve')
 
 if __name__== "__main__":
-   search("Boris")
+   dijkstra(couts, parents)
 ```
 
-- [ ] La fonction `search` a plutôt l'air d'avoir un effet secondaire `side effects` car toute définition de recherche devrait retourner un booléen et devrait afficher autre chose que ce que l'on a actuellement. Pour y remédier, nous allons lui donner une valeur de retour par défaut, disons toujour faux `False` car on n'a rien trouvé et temporairement afficher la taille des valeurs comprenant notre arbre `eleves`.
+- [ ] La fonction `dijkstra` a plutôt l'air d'avoir un effet secondaire `side effects` car toute définition de recherche devrait retourner une valuer et pourrait afficher autre chose que ce que l'on a actuellement. Pour y remédier, nous allons lui donner une valeur de retour par défaut, notre arbre `arbre`.
 
 ```python
-def search(name):
-   print( len(eleves.values()) )
-   return False
+def dijkstra(couts, parents):
+    print( len(arbre.values()) )
+    return arbre
 ```
 
 Maintenant fais tourner ton code et mets le *nombre* de valeurs que tu as trouvé dans le commentaire et faisons rouler ce tutoriel!
