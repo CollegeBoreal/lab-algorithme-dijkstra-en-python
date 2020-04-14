@@ -1,4 +1,4 @@
-Tu as entré {{ taille }} , j'ai trouvé :four: . Cela n'a pas trop d'importance pour l'instant, continuons!.
+Tu as entré {{ taille }} , j'ai trouvé :four: . C'est la taille de l'arbre `arbre` composé des noeuds, `debut`, `a`, `b` et `fin`.
 
 - [ ] Déterminons le meilleur coût
 
