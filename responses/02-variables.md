@@ -4,7 +4,7 @@ Pour faire une recherche arborescente, il nous faut un arbre qui constituera not
 
 Dans cet exemple, on va créer un arbre que l'on appellera `arbre` qui nous permettra de naviguer à travers des noeuds ayant un poids à chaque arc (symbolisé par un flèche). 
 
-Le but étant de traverser l'arbre du début jusqu'à la fin en prenant le chemin le moins couteux, dans notre cas le tracé indiqué en rouge :crayon:. Les coût peuvent indiqués des kilomètres, des vitesses de débit Internet. Dans notre cas, nous allons choisir des kilomètres.
+Le but étant de traverser l'arbre du début jusqu'à la fin en prenant le chemin le moins couteux, dans notre cas le tracé indiqué en rouge :crayon:. Les coût peuvent indiqués des kilomètres, des vitesses de débit Internet. Pour notre exemple, nous allons choisir des kilomètres.
 
 Pour rappel, le graphe ne peux former de boucle afin de respecter la description d'un arbre [voir DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
