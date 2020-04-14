@@ -45,8 +45,10 @@ def dijkstra(couts, parents):
         cout = couts[noeud]
         voisins = arbre[noeud]
         for voisin in voisins.keys():
+            # cout du noeud courant ajouté du cout du voisin
             nouveau_cout = cout + voisins[voisin]
-            if couts[voisin] > nouveau_cout:
+            # Si le coût cumulé est inférieur au cout du voisin on le sauve
+            if nouveau_cout < couts[voisin]:
                 couts[voisin] = nouveau_cout
                 parents[voisin] = noeud
         visite.append(noeud)
