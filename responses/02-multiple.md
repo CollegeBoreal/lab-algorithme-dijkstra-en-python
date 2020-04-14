@@ -4,9 +4,9 @@ Tu as entré {{ taille }} , j'ai trouvé :four: . Cela n'a pas trop d'importance
 
 Pour que notre algorithme fonctionne, nous allons chercher le meilleur coût à travers une liste de couts.
 
-C'est très simple, on va créer une fonction `trouver_noeud_ayant_meilleur_cout` qui va recevoir une liste de noeux qu'on a assigné des coûts. 
+C'est très simple, on va créer une fonction `trouver_noeud_ayant_meilleur_cout` qui va recevoir une liste de noeux dont on a assigné des coûts.
 
-:bulb: On va écrire notre fonction juste après la déclaration de notre arbre `eleves`
+:bulb: On va écrire notre fonction juste après la déclaration de notre arbre `parents` dans la partie déclaration des variables.
 
 ```python
 def trouver_noeud_ayant_meilleur_cout(couts):
@@ -19,6 +19,8 @@ def trouver_noeud_ayant_meilleur_cout(couts):
             noeud_au_meilleur_cout = noeud
     return noeud_au_meilleur_cout
 ```
+
+On `boucle` autour de notre dictionnaire de couts en extirpant chaque `noeud` et en lisant son coût. Si le cout nous intéresse, on le garde dans deux variables `noeud_au_meilleur_cout` et `meilleur_cout` pour les utiliser ultérieurement.
 
 Maintenant que nous avons notre cas de base `base case`, penser à la récursion, on va utiliser une autre `structure de données` pour ordonner notre recherche.  
 
