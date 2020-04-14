@@ -35,6 +35,15 @@ couts = arbre['debut']
 couts['fin'] = INFINI
 ```
 
+- [ ] Enfin, afin de remonter dans l'arbre, ajoute le dictionnaire `parents` qui nous guidera vers le haut de la hiérarchie si besoin.
+
+```
+parents = {}
+parents['a'] = 'debut'
+parents['b'] = 'debut'
+parents['fin'] = None
+```
+
 - [ ] Notre programme étant une recherche, on va remplacer la fonction `main` par `search` en lui donnant un paramètre en entrée `name`. Afin de lui donner le premier nom dans l'arbre, dans le block `if __name__ == "__main__"` on écrira la nouvelle fonction et son paramètre d'entrée: `search("Boris")`. Le code se présentera comme ceci.
 
 ```python
