@@ -35,6 +35,13 @@ couts = arbre['debut']
 couts['fin'] = INFINI
 ```
 
+:bulb: Si tu tapes `couts` dans le [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) python, encore appellé la console python ou le [CLI](https://en.wikipedia.org/wiki/Command-line_interface) Python, tu obtiendras ceci 
+
+```
+>>> couts
+{'a': 6, 'b': 2, 'fin': inf}
+```
+
 - [ ] Enfin, afin de remonter dans l'arbre, ajoute le dictionnaire `parents` qui nous guidera vers le haut de la hiérarchie des `noeuds`. Naturellement, le parent du noeud `fin` n'est pas encore déterminé, nous lui assignerons la valeur `None` qui signifie `rien`. 
 
 ```
