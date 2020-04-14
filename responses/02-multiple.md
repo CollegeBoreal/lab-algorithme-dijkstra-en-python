@@ -20,7 +20,7 @@ def trouver_noeud_ayant_meilleur_cout(couts):
     return noeud_au_meilleur_cout
 ```
 
-On `boucle` autour de notre dictionnaire de coûts en extirpant chaque `noeud` et en lisant son coût. Si le cout nous intéresse, on le garde dans deux variables `noeud_au_meilleur_cout` et `meilleur_cout` pour les utiliser ultérieurement.
+On `boucle` autour de notre dictionnaire de coûts en extirpant chaque `noeud` et en lisant son coût. Si le coût nous intéresse, on le garde dans deux variables `noeud_au_meilleur_cout` et `meilleur_cout` pour les utiliser ultérieurement.
 
 Maintenant que nous avons notre cas de base `base case`, penser à la récursion, on va utiliser une autre `structure de données` pour ordonner notre recherche.  
 
